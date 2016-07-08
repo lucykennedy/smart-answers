@@ -40,7 +40,8 @@
       - [go to <%= calculator.country_name_lowercase_prefix %> and post notice at the embassy or consulate there](<%= calculator.outcome_path_when_resident_in_ceremony_country %>)
 
       <% if calculator.ceremony_country == 'greece' %>
-        %If you choose to post notice in <%= calculator.country_name_lowercase_prefix %>, you’ll normally have to wait at least 14 days before you can apply to get married.%
+        %If you choose to post notice in <%= calculator.country_name_lowercase_prefix %>, you’ll normally have to wait at least 13 days (and sometimes longer depending on the local authorities) before you can get married.%
+        
       <% elsif calculator.ceremony_country == 'italy' %>
       <% else %>
         <%= render partial: 'you_will_have_to_wait_to_get_married.govspeak.erb',
